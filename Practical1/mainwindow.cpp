@@ -16,9 +16,9 @@ MainWindow::MainWindow(QWidget *parent)
     QTimer* timer = new QTimer();
 
     // x and y data for the plot
-    QVector<double> x(1001), y(1001);
+    QVector<double> x(1000), y(1000);
 
-    for (int i=0; i<1001; ++i)
+    for (int i=0; i<1000; ++i)
     {
         x[i] = i;
         y[i] = 0;
@@ -37,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
     auto curr_time = high_resolution_clock::now();
     double FPS = 0.0;
 
-    int i = 101;
+    int i = 1000;
 
     // connect the timer's timeout signal to a function which updates the plots
     QObject::connect(timer, &QTimer::timeout, [=]() mutable {
