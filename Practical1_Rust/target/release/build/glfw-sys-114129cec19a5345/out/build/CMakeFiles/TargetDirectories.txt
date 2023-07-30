@@ -1,0 +1,15 @@
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/CMakeFiles/uninstall.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/CMakeFiles/edit_cache.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/CMakeFiles/rebuild_cache.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/CMakeFiles/list_install_components.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/CMakeFiles/install.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/CMakeFiles/install/local.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/CMakeFiles/install/strip.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/update_mappings.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/glfw.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/edit_cache.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/rebuild_cache.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/list_install_components.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/install.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/install/local.dir
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/build/src/CMakeFiles/install/strip.dir

@@ -1,0 +1,8 @@
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/lib/libglfw3.a
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/include/GLFW/glfw3.h
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/include/GLFW/glfw3native.h
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/lib/cmake/glfw3/glfw3Config.cmake
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/lib/cmake/glfw3/glfw3ConfigVersion.cmake
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/lib/cmake/glfw3/glfw3Targets.cmake
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/lib/cmake/glfw3/glfw3Targets-release.cmake
+/home/reinhardt/personal/ERP420_Project/Practical1_Rust/target/release/build/glfw-sys-114129cec19a5345/out/lib/pkgconfig/glfw3.pc
