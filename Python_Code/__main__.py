@@ -6,6 +6,9 @@ from PyQt5.QtGui import QPen
 import numpy as np
 import time
 
+
+NUM_POINTS = 1000
+
 class RealTimePlotApp(QMainWindow):
     def __init__(self):
         super().__init__()
@@ -27,8 +30,8 @@ class RealTimePlotApp(QMainWindow):
             layout.addWidget(self.plot_widgets[i])
 
         # Initialize data for the 3 plots
-        self.x_data = [np.arange(0, 1000) for _ in range(3)]
-        self.y_data = [np.zeros(1000) for _ in range(3)]
+        self.x_data = [np.arange(0, NUM_POINTS) for _ in range(3)]
+        self.y_data = [np.zeros(NUM_POINTS) for _ in range(3)]
 
         # Create curve items for the plots
         self.curves = [self.plot_widgets[i].plot(self.x_data[i], self.y_data[i]) for i in range(3)]
@@ -56,18 +59,16 @@ class RealTimePlotApp(QMainWindow):
 
         self.FPS = 0.95*self.FPS + 0.05*new_FPS
 
-        # Limit the number of data points shown on the plot
-        max_data_points = 1000
-
+        # update the plots
         for i in range(3):
-            x_new = np.array([self.x_data[-1] + 1])
-            y_new = np.array([self.FPS])
+            x_new = self.x_data[i][-1] + 1
+            y_new = self.FPS
 
-            self.x_data[i] = np.append(self.x_data[i], x_new)
-            self.y_data[i] = np.append(self.y_data[i], y_new)
+            self.y_data[i] = np.roll(self.y_data[i], -1)
+            self.y_data[i][-1] = y_new
 
-            self.x_data[i] = self.x_data[i][-max_data_points:]
-            self.y_data[i] = self.y_data[i][-max_data_points:]
+            self.x_data[i] = np.roll(self.x_data[i], -1)
+            self.x_data[i][-1] = x_new
 
             self.curves[i].setData(self.x_data[i], self.y_data[i])
 
