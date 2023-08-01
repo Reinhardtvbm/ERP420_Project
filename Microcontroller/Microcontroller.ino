@@ -1,20 +1,58 @@
-#include <WiFi.h>
-#include "WiFiRelay.h"
+#include <Wire.h>
+#include "Magnetometer.h"
+#include "Inertial.h"
 
-const char* ssid     = "R_iPhone"; // Change this to your WiFi SSID
-const char* password = "boopboop"; // Change this to your WiFi password
+Magnetometer magnetometer;
+Inertial inertial;
 
-const char* server_ip = "172.20.10.7"; // Change this to the ip of server on laptop
-const int port = 3000; // This should not be changed (server port should be the same)
+uint32_t time_prev = micros();
 
-WiFiRelay relay(ssid, password, server_ip, port);
+void setup(void) {
+  Serial.begin(115200);
+  while (!Serial) delay(10);
 
-void setup() {
-    Serial.begin(115200);
-    while(!Serial){delay(100);}
+  Wire.begin();
+  magnetometer.start();
+  inertial.start();
 }
 
-void loop() {
-  double data_points[9] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
-  relay.send_sensor_data(data_points);  
+void loop(void) {
+  uint32_t time_curr = micros();
+
+  Serial.println(1.0 / ((double)(time_curr - time_prev) / 1000000.0));
+  time_prev = time_curr;
+  // sample data at 1000Hz
+//  if (time_curr - time_prev < 1000) {
+//    Serial.println("waiting");
+//    return;
+//  } else {
+//    time_prev = time_curr;
+//  }
+
+  int16_t readings[9];
+
+  magnetometer.get_values(readings);
+
+//  Serial.print("M_X:\t");
+//  Serial.print(readings[0]);
+//  Serial.print("\tM_Y:\t");
+//  Serial.print(readings[1]);
+//  Serial.print("\tM_Z:\t");
+//  Serial.print(readings[2]);
+  
+  inertial.get_values(readings + 3);
+  
+//  Serial.print("\t||\tG_X:\t");
+//  Serial.print(readings[3]);
+//  Serial.print("\tG_Y:\t");
+//  Serial.print(readings[4]);
+//  Serial.print("\tG_Z:\t");
+//  Serial.print(readings[5]);
+//
+//  Serial.print("\t||\tA_X:\t");
+//  Serial.print(readings[6]);
+//  Serial.print("\tA_Y:\t");
+//  Serial.print(readings[7]);
+//  Serial.print("\tA_Z:\t");
+//  Serial.println(readings[8]);
 }

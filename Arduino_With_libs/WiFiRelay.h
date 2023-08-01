@@ -1,5 +1,3 @@
-#pragma once
-
 #include <WiFi.h>
 
 class WiFiRelay {

@@ -4,7 +4,7 @@ extern crate gl;
 use glfw::{Action, Context, Key};
 use std::{net::{TcpListener, TcpStream}, io::{BufReader, Read}};
 
-const SERVER_ADDRESS: &str = "127.0.0.1:3000";
+const SERVER_ADDRESS: &str = "192.168.137.1:3000";
 
 fn main() {
     let listener = TcpListener::bind(SERVER_ADDRESS).unwrap();
