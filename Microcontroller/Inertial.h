@@ -199,5 +199,5 @@
 class Inertial {
     public:
         void start();
-        void get_values(int16_t* readings);
+        void get_values(uint8_t* readings);
 };

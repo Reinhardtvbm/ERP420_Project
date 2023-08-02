@@ -14,7 +14,13 @@ void I2C_read_reg(uint8_t device_address, uint8_t register_address, uint8_t* buf
 
   Wire.requestFrom(device_address, len);
 
-  while (Wire.available() < len) {}
+  uint32_t now = millis();
+  while (Wire.available() < len) {
+    // timeout of 50 ms
+    if (millis() - now > 50) {
+      return;
+    }
+  }
   
   for (int i = 0; i < len; ++i) {
     buffer[i] = Wire.read();
