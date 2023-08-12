@@ -1,0 +1,9 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+#define REFRESH_RATE 250
+#define MAG_FULL_SCALE 49.152
+#define GYRO_DPS 2000.0
+#define ACC_FULL_SCALE 4.0
+
+#endif // CONSTANTS_H
