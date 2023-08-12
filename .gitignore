@@ -1,7 +1,6 @@
 build-Practical1-Desktop-Debug
 build-Practical1-Desktop-Release
-Practical1_Cpp/qcustomplot.h
-Practical1_Cpp/qcustomplot.cpp
-Practical1_Rust/target
-test_server/target
+Cpp/qcustomplot.h
+Cpp/qcustomplot.cpp
+Rust/target
 modelling/main
