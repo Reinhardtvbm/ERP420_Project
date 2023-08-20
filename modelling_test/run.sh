@@ -1,4 +1,6 @@
 #!/bin/bash
 
-g++ -o main main.cpp
+cd bin/
+g++ -o main ../*.h ../*.cpp
 ./main
+cd ..

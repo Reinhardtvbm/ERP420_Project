@@ -1,5 +1,6 @@
 build-Practical1-Desktop-Debug
 build-Practical1-Desktop-Release
+modelling_test/Eigen
 Cpp/qcustomplot.h
 Cpp/qcustomplot.cpp
 Cpp/Eigen
